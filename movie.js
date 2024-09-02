@@ -3,7 +3,7 @@ let searchinput=document.getElementById("searchinput");
 let searchbtn=document.getElementById("searchbtn");
 const getdata= async(movie)=>{
    try{
-    let fetchData = await fetch(`http://www.omdbapi.com/?apikey=${APIKey}&t=${movie}`);
+    let fetchData = await fetch(`https://www.omdbapi.com/?apikey=${APIKey}&t=${movie}`);
     let jsondata= await fetchData.json();
     console.log(jsondata);
     document.querySelector(".card").innerHTML=""
